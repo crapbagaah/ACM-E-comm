@@ -209,14 +209,12 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
-
-.shop{
     margin-top: 60px;
     background-color: #edd9b3;
     background-image: url("something.jpg");
     border-radius: 10px;
 }
+
 
 .thirft{
     flex-basis: 30%;
@@ -226,9 +224,7 @@ body{
 
 .thirft img{
     width: 100%;
-    border-radius: 60px;
     display: block;
-    transition: transform 1s;
 }
 
 .thirft p{
@@ -238,19 +234,30 @@ body{
     font-weight: bold;
     color: #008080;
     padding: 10px 0;
+    transition: transform 0.5s;
 }
 
 .thirft p:hover{
     color: #800000;
-    transition: 0.5s;
+    transform: translateX(-10px)
+    
 }
 
 .shop h1{
     font-size: 70px;
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
     color: #800000;
     padding: 30px 0 10px 0;
+}
+
+.shop h1 em{
+    color: #002153;
+    transition: transform 0.5s;
+}
+
+.shop h1 em:hover{
+    color: #800000;
+    transform: translateY(-10px)
 }
 
 .shop h2{
@@ -267,6 +274,13 @@ body{
     font-style: oblique;
     color: #008080;
     padding: 10px 0;
+    transition: transform 0.5s;
+}
+
+.shop p:hover{
+    color: #800000;
+    transform: translateX(-10px)
+    
 }
 
 .shop .btn{
@@ -475,6 +489,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     background: #800000;
+    color: #f4c8c8;
 }
 
 .contact-right form{
